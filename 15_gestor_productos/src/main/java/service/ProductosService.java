@@ -5,7 +5,7 @@ import java.util.List;
 
 import model.Producto;
 
-public class service {
+public class ProductosService {
 	
 	private static List<Producto> productos = new ArrayList<>();   /// la lista es Static para que no se pierdan los datos
 	
