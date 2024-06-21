@@ -1,4 +1,4 @@
-<%@page import="model.Resultado"%>
+<%@page import="model.Resultado,java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%  List<Resultado> resultados=(List<Resultados>)request.getAttribute("paginas"); 
+	<%  List<Resultado> resultados=(List<Resultado>)request.getAttribute("paginas"); 
 		if(resultados!=null&&resultados.size()>0){
 			for(Resultado r:resultados){%>
 				<h2><a href="<%=r.getUrl()%>"><%=r.getUrl()%></a></h2>
