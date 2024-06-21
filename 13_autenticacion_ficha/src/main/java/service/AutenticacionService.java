@@ -8,7 +8,7 @@ public class AutenticacionService {
 	private final String USER="Admin";
 	private final String PASSWORD="curso";
 	List<Ficha> fichas= List.of(new Ficha("ar", 19,"aa@gmail.com"),
-			new Ficha("admin", 24,"admoin@gmail.com"),
+			new Ficha("Admin", 24,"admoin@gmail.com"),
 			new Ficha("jose", 49,"jos@gmail.com"),
 			new Ficha("hup", 35,"ddd@gmail.com")
 			);

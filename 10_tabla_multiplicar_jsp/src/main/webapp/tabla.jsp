@@ -8,15 +8,18 @@
 </head>
 <body>
 	<center>
+		<%int numero=Integer.parseInt(request.getParameter("numero")); %>
 		<table border="1">
-		<% for(int i=1;i<=10;i++) {%>
-			<tr>
-				<%for(int k=1;k<=10;k++) { %>
-					<td><%=i*k %></td>
-				<%}%>
-			<tr>	
+			<% for(int i=1;i<=10;i++) {%>
+				<tr>
+				
+					<td><%=numero%>x<%=i%></td>
+					<td><%=numero*i %></td>
+				</tr>		
 			<%}%>
 		</table>
+		<br>
+		<a href="numero.html">Volver</a>
 	</center>
 </body>
 </html>

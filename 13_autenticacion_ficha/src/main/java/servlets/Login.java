@@ -26,9 +26,9 @@ public class Login extends HttpServlet {
 	//creamos la ficha 	del usuario y la guardamos en un atributo
 	Ficha ficha = service.fichausuario(user);// creoi el objeto
 	request.setAttribute("ficha", ficha);//lo guardo
-		dispatcher=request.getRequestDispatcher("Bienvenida.jsp");//envio la peticion
+		dispatcher=request.getRequestDispatcher("bienvenida.jsp");//envio la peticion
 	}else {
-		dispatcher=request.getRequestDispatcher("Error.jsp");
+		dispatcher=request.getRequestDispatcher("error.jsp");
 	}
 	dispatcher.forward(request, response);
 }

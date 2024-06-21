@@ -22,7 +22,7 @@ public class ProductosService {
 	}
 	
 	public void eliminar (String nombre) {
-		productos.remove(nombre);
+		productos.removeIf(p->p.getNombre().equals(nombre));
 		
 		
 	}

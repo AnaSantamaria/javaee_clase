@@ -18,7 +18,8 @@ public class guardarServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ProductosService service = new ProductosService();
 		service.guardar(new Producto(request.getParameter("nombre"),Double.parseDouble("precio"), request.getParameter("categoria")));
-		request.getRequestDispatcher("gestorProductos.html").forward(request, response);
+		request.getRequestDispatcher("gestorProductos.html")
+		.forward(request, response);
 		
 	}
 

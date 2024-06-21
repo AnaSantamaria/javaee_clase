@@ -18,7 +18,7 @@ public class Bienvenida extends HttpServlet {
 		 try(PrintWriter out=response.getWriter()){
 			 out.println("<<html><head></head><body><body><center> ");
 			 out.println("<h2>Bienvenido"+request.getParameter("username")+ " a mi página</h2>");
-			 out.println("</body></html>");
+			 out.println("</center></body></html>");
 			
 				}
 				
