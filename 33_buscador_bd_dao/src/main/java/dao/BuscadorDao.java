@@ -11,16 +11,16 @@ import model.Resultado;
 
 public class BuscadorDao {
 
-	private EntityManager eManager;
+	private static EntityManager eManager;// Patron Singleton. Convertir en Static el EntityManager para que se instancie solo una vez independientemente de las veces que se llame
 
-	public BuscadorDao() {
-		EntityManagerFactory factory = Persistence.createEntityManagerFactory("buscador");
-		eManager = factory.createEntityManager();
+	static {																				//Patron Singleton
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("buscador");	//Patron Singleton
+		eManager = factory.createEntityManager();											//Patron Singleton
 
 	}
 
 	public void save(Resultado resultado) {
-		EntityTransaction tx = eManager.getTransaction();// es necesario iniciar y cerrar la transacci´n para validarla
+		EntityTransaction tx = eManager.getTransaction();// es necesario iniciar y cerrar la transacción para validarla
 															// y que se realice
 		tx.begin();
 		try {
