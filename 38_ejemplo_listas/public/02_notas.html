@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    guardar nota  <input type="text" id="n"><br><br>
+    <input type="button" value="guardar" onclick="guardar()"><br>
+    <input type="button" value="media" onclick="media()"><br>
+    <input type="button" value="aprobados" onclick="aprobados()"><br>
+    <input type="button" value="todas" onclick="verTodas()"><br>
+    
+    <br><br>
+    <h1 id="res"></h1>
+
+    <script type="text/javascript">
+
+        var notas=[];
+
+        function guardar(){
+
+        notas.push(parseInt(document.getElementById("n").value));
+    }
+
+
+        function media(){
+        var m=0;
+
+        
+        for(let i=0;i<notas.lenght;i++){
+            m+=i;
+		
+		}
+        document.getElementById("madia").innerText=m/notas.length;
+    }
+    		
+    
+    function aprobados(){
+    
+        let ap=notas.filter((n=>n>=5).length); 
+			document.getElementById("aprobados").innerText=ap;
+		
+
+
+        document.getElementById("aprobados").innerText=m/notas.length;
+    }
+
+        function verTodas(){
+        document.getElementById("notas").innerText=notas.join("-");
+
+    }   
+    </script>
+
+</body>
+</html>

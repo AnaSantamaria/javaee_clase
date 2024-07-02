@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+	//crear un array/lista
+	var data=[];
+	var other=[5,10,1];
+	//Añadir datos a un arraylist
+	data[0]=25;
+	data[3]=40;
+	other.push("hello");
+	console.log(data[1]);
+	console.log(other.lenth);
+	//recorrido de un array
+	for(let n of other){
+		
+		console.log(n+"-");
+	}
+	
+	//segundo método para recorrer un array
+	for(let i=0;i<other.lenght;i++){
+		
+		console.log(other[i]+"-");
+		
+	}
+	
+	//tercera
+	other.forEach(n=>console.log(n+"-"));
+	
+	//cuarta
+	other.forEach(function(n){ 
+		
+		console.log(n+"-")
+		
+		
+	});
+	//ordenacion
+	data.sort(function(a,b){
+		return a-b;
+		
+		})
+		console.log(other);
+	
+	
+	</script>
+	
+
+</body>
+</html>
