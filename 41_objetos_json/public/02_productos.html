@@ -2,9 +2,38 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>gestor de productos</title>
 </head>
 <body>
+	nombre:<input type="text" id="nombre">
+	categoria:<input type="text" id="categoria">
+	precio:<input type="text" id="precio"><br><br>
+	 <input type="button" value="guardar" onclick="guardar();"><br>
+	 <hr>
+	 <br>
+	  <input type="button" value="buscar" onclick="buscar();"><br>
+	  
+	   <script type="text/javascript">
+	   
+	   var productos=[];
+	   
+	   function guardar(){
+		   
+		   var producto = new Objet();
+		   producto.nombre=document.getElementById("nombre").value;
+		   producto.categoria=document.getElementById("categoria").value;
+		   producto.precio=document.getElementById("precio").value;
+		   productos.push(producto);
+		   
+		   
+	   }
+	   function buscar(){
+		   
+		   
+	   }
+	   
+	   
+	   </script>
 
 </body>
 </html>
