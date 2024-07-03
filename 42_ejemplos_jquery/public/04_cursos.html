@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Cursos</h1>
+	<p>Java</p><p>Python</p><p>Kubernates</p><p>Spring Boot</p><p>Linux</p><br>
+	<h2>Duraciones</h2>
+	<b>120</b>||<b>80</b>||<b>60</b>||<b>75</b>||<b>50</b>
+	<br>
+	Duración máxima:<input type="text" id="duracion"><input type="button" value="Filtrar" id="filtrar">
+	<br>
+	<div id="cursos">
+	
+	</div> 
+	<script type="text/javascript">
+	var cursos=[];
+	$("p").each(function(i,p){
+		var obj=new Object();
+		obj.nombre=p.innerText;
+		obj.duracion=$("b").get(i).innerText;
+		obj.asignaturas=parseInt(obj.duracion/30);
+		cursos.push(obj);
+	});
+	$.each(cursos,function(i,e){
+		console.log(JSON.stringify(e));
+	})
+	
+	
+	
+	
+	$("#filtrar").click(function(){
+		var tabla="<table border='1'><tr><th>Curso</th><th>Duracion</th><th>Asignatura</th><tr>";
+		$.each(cursos,function(i,p){
+			if(p.duracion==$("#filtrar").val()){
+				tabla+="<tr><td>"+p.nombre+"</td><td>"+p.categoria+"</td><td>"+p.precio+"</td></tr>";
+			}
+		});
+		
+		
+	});
+	</script>
+</body>
+</html>

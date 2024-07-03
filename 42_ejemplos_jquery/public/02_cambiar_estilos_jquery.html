@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <p>Parrafo 1</p>
+    <p>Parrafo 2</p>
+    <p>Parrafo 3</p>
+
+    <br>
+    <input type="button" value="Poner negrita" onclick="negrita();">
+
+    <script>
+    $("#negrita").click(function(){
+		/*$("p").each(function(i,e){
+			e.style.fontWeight="Bold";
+		});*/
+		
+		//$("p").each((i,e)=>e.style.fontWeight="Bold");
+		
+		/*$("p").each(function(){
+			$(this).css("font-weight","Bold");
+		});*/
+		
+		$("p").css("font-weight","Bold");
+	});
+
+    
+    </script>
+</body>
+</html>

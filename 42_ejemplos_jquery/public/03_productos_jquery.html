@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	nombre:<input type="text" id="nombre">
+	categoria:<input type="text" id="categoria">
+	precio:<input type="text" id="precio"><br><br>
+	 <input type="button" value="guardar" onclick="guardar();"><br>
+	 <hr>
+	 <br>
+	 categoria:<input type="text" id="cat">
+	  <input type="button" value="buscar" onclick="buscar();"><br>
+	  <br><br>
+	  <div id="tabla">
+
+		
+
+
+	  </div>
+
+	
+	  
+	 
+	 <script type="text/javascript">
+	   
+	   var productos=[];
+	   $("#guardar").click(function (){
+	   
+		   var producto = new Objet();
+		   producto.nombre=$("#nombre").val();
+		   producto.categoria=$("#catgoria").val();
+		   producto.precio=$("#precio").val();
+		   productos.push(producto);
+		   
+		   
+	   }
+	   
+	  	 $("#buscar").click(function(){
+		var tabla ="<table border='1'><tr><th>Nombre</th><th>Categoría</th><th>Precio</th><tr>";
+
+		/*productos.forEach(function(p){
+		if(p.categoria==$("#cat").val()){
+			tabla+="<tr><td>"+p.nombre+"</td><td>"+p.categoria+"</td><td>"+p.precio+"</td></tr>";
+		}
+	});*/
+	$.each(productos,function(i,p){
+		if(p.categoria==$("#cat").val()){
+			tabla+="<tr><td>"+p.nombre+"</td><td>"+p.categoria+"</td><td>"+p.precio+"</td></tr>";
+		}
+	});
+	tabla+="</table>";
+	$("#tabla").html(tabla);
+	
+	})
+
+
+</script>
+
+</body>
+</html>
