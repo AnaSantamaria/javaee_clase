@@ -1,23 +1,20 @@
 package service;
 
 import dao.UsuariosDao;
-import jakarta.servlet.RequestDispatcher;
 import model.Usuario;
 
 public class UsuarioService {
-	
-	UsuariosDao udao = new UsuariosDao();
-	
-	public boolean validarUsuario (Usuario usuario) {
+
+	UsuariosDao dao = new UsuariosDao();
+
+	public boolean validarUsuario (String idusuario ,String password) {
+		return dao.findByUsuarioAndPassword(idusuario, password)!=null;
 		
+	}	
 		
-		
-		
-		return false;
+}	 
 		 
 		
-	}
+	
 		
-  
-	}
 

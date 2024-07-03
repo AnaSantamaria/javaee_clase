@@ -18,7 +18,7 @@ public class Curso {
 		private String nombre;
 		private String tematica;
 		private int duracion;
-		private int precio;
+		private double precio;
 		
 		public Curso() {
 			super();
