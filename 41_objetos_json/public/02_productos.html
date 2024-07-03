@@ -11,9 +11,20 @@
 	 <input type="button" value="guardar" onclick="guardar();"><br>
 	 <hr>
 	 <br>
+	 categoria:<input type="text" id="cat">
 	  <input type="button" value="buscar" onclick="buscar();"><br>
+	  <br><br>
+	  <div id="tabla">
+
+		
+
+
+	  </div>
+
+	
 	  
-	   <script type="text/javascript">
+	 
+	 <script type="text/javascript">
 	   
 	   var productos=[];
 	   
@@ -28,8 +39,19 @@
 		   
 	   }
 	   function buscar(){
-		   
-		   
+		var tabla ="<table border='1'><tr><th>Nombre</th><th>Categoría</th><th>Precio</th><tr>";
+
+		productos.forEach(function(p){
+
+			if(p.categoria==document.getElementById("cat").value){
+					tabla+="<tr><td>"+
+					p.nombre+"</td><td>"+
+					p.categoria+"</td><td>"+
+					p.precio+"</td></tr>";
+				}
+			});
+			tabla+="</table>";
+			document.getElementById("tabla").innerHTML=tabla;
 	   }
 	   
 	   
