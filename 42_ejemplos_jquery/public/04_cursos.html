@@ -21,11 +21,11 @@
 	$("p").each(function(i,p){
 		var obj=new Object();
 		obj.nombre=p.innerText;
-		obj.duracion=$("b").get(i).innerText;
+		obj.duracion=parseInt($("b").get(i).innerText);
 		obj.asignaturas=parseInt(obj.duracion/30);
 		cursos.push(obj);
 	});
-	$.each(cursos,function(i,e){
+	$.each(cursos,function(i,p){
 		console.log(JSON.stringify(e));
 	})
 	
@@ -33,11 +33,11 @@
 	
 	
 	$("#filtrar").click(function(){
-		var duracionMaxima = parseInt($("#duracion").val());
-		var tabla="<table border='1'><tr><th>Curso</th><th>Duracion</th><th>Asignatura</th><tr>";
-		$.each(cursos,function(i,p){
-			if(p.duracion <= duracionMaxima){
-				tabla+="<tr><td>"+p.nombre+"</td><td>"+p.categoria+"</td><td>"+p.precio+"</td></tr>";
+		let duracionMaxima = parseInt($("#duracion").val());// let es la manera de definir la variable para que recoja el valor
+		var tabla="<table border='1'><tr><th>Nombre</th><th>Duracion</th><th>Asignatura</th><tr>";
+		$.each(cursos,function(i,e){
+			if(e.duracion <= duracionMaxima){
+				tabla+="<tr><td>"+p.nombre+"</td><td>"+e.duracion+"</td><td>"+e.asignaturas+"</td></tr>";
 			}
 		});
 		tabla+="</table>";
