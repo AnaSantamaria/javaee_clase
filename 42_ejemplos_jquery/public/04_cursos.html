@@ -33,13 +33,15 @@
 	
 	
 	$("#filtrar").click(function(){
+		var duracionMaxima = parseInt($("#duracion").val());
 		var tabla="<table border='1'><tr><th>Curso</th><th>Duracion</th><th>Asignatura</th><tr>";
 		$.each(cursos,function(i,p){
-			if(p.duracion==$("#filtrar").val()){
+			if(p.duracion <= duracionMaxima){
 				tabla+="<tr><td>"+p.nombre+"</td><td>"+p.categoria+"</td><td>"+p.precio+"</td></tr>";
 			}
 		});
-		
+		tabla+="</table>";
+		$("#tabla").html(tabla);
 		
 	});
 	</script>
