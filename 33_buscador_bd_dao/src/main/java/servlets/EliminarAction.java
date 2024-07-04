@@ -16,7 +16,7 @@ public class EliminarAction extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		BuscadorService service = new BuscadorService();
-		service.eliminarResultado(Integer.parseInt("idResultado"));
+		service.eliminarResultado(Integer.parseInt(request.getParameter("idResultado")));
 	}
 
 }

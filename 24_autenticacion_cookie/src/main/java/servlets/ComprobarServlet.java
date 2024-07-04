@@ -10,6 +10,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import service.AutenticacionService;
 
 @WebServlet ("/ComprobarServlet")
 public class ComprobarServlet extends HttpServlet {
@@ -31,7 +32,7 @@ public class ComprobarServlet extends HttpServlet {
 				}
 			}*/
 			String usuario=Arrays.stream(request.getCookies()!=null?request.getCookies():new Cookie[0])
-						.filter(c->c.getName().equals("usuario"))
+						.filter(c->c.getName.equals("usuario"))
 						.findFirst()
 						.orElse(new Cookie("usuario",null))
 						.getValue();
@@ -40,8 +41,8 @@ public class ComprobarServlet extends HttpServlet {
 				request.getRequestDispatcher("login.html").forward(request, response);
 			}else {
 				//recoge la ficha del usuario antes de pasar el control a bienvenida.jsp
-				UsuariosService service=new UsuariosService();
-				request.setAttribute("ficha", service.fichaUsuario(usuario));
+				AutenticacionService service=new AutenticacionService();
+				request.setAttribute("ficha", service.fichausuario(usuario));
 				request.getRequestDispatcher("bienvenida.jsp").forward(request, response);
 			}
 		}

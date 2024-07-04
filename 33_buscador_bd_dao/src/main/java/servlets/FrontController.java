@@ -17,24 +17,24 @@ public class FrontController extends HttpServlet {
 		String operation = request.getParameter("operation");
 		
 		urlVista=switch(operation) {
-		case "doguardar"->{
+		case "doAlta"->{
 			request.getRequestDispatcher("AltaAction").include(request, response);
 			yield "inicio.html";
 		}
-		case "doeliminar"->{
+		case "doEliminar"->{
 			request.getRequestDispatcher("EliminarAction").include(request, response);
 			yield "inicio.html";
 		}
-		case "dobuscar"->{
+		case "doBuscar"->{
 			request.getRequestDispatcher("BuscarAction").include(request, response);
 			yield "resultado.jsp";
 		}
-		case "dobuscargeneral"->{
+		case "doBuscarGeneral"->{
 			request.getRequestDispatcher("BuscadorGeneralAction").include(request, response);
 			yield "resultados.jsp";
 		}
-		case "tobuscargeneral"->"tobuscargeneral";
-		case "toAlta"->"guardar.html";
+		case "toBuscarGeneral"->"tobuscarGeneral";
+		case "toAlta"->"alta.html";
 		case "toBuscar"->"buscar.jsp";
 		case "toEliminar"->"eliminar.html";
 		default->"inicio.html";

@@ -25,7 +25,7 @@
 		obj.asignaturas=parseInt(obj.duracion/30);
 		cursos.push(obj);
 	});
-	$.each(cursos,function(i,p){
+	$.each(cursos,function(i,e){
 		console.log(JSON.stringify(e));
 	})
 	
@@ -37,11 +37,11 @@
 		var tabla="<table border='1'><tr><th>Nombre</th><th>Duracion</th><th>Asignatura</th><tr>";
 		$.each(cursos,function(i,e){
 			if(e.duracion <= duracionMaxima){
-				tabla+="<tr><td>"+p.nombre+"</td><td>"+e.duracion+"</td><td>"+e.asignaturas+"</td></tr>";
+				tabla+="<tr><td>"+e.nombre+"</td><td>"+e.duracion+"</td><td>"+e.asignaturas+"</td></tr>";
 			}
 		});
 		tabla+="</table>";
-		$("#tabla").html(tabla);
+		$("#cursos").html(tabla);
 		
 	});
 	</script>
