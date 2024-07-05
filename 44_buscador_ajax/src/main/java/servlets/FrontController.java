@@ -16,28 +16,31 @@ public class FrontController extends HttpServlet {
 		String urlVista="";    // declaro una variable inicialzada a vacio para empezar 
 		String operation = request.getParameter("operation");
 		
-		urlVista=switch(operation) {
-		case "doAlta"->{
+		switch(operation) {
+		case "doAlta":
 			request.getRequestDispatcher("AltaAction").include(request, response);
-			yield "inicio.html";
-		}
-		case "doEliminar"->{
+			urlVista= "inicio.html";
+			break;
+		case "doEliminar":
 			request.getRequestDispatcher("EliminarAction").include(request, response);
-			yield "inicio.html";
-		}
-		case "doBuscar"->{
+			urlVista= "inicio.html";
+			break;
+		
+		case "doBuscar":
 			request.getRequestDispatcher("BuscarAction").include(request, response);
-			yield "resultado.jsp";
-		}
-		case "doBuscarGeneral"->{
-			request.getRequestDispatcher("BuscadorGeneralAction").include(request, response);
-			yield "buscarResultados.html";
-		}
-		case "toBuscarGeneral"->"tobuscarGeneral";
-		case "toAlta"->"alta.html";
-		case "toBuscar"->"buscar.jsp";
-		case "toEliminar"->"eliminar.html";
-		default->"inicio.html";
+			urlVista ="resultado.jsp";
+			break;
+		
+		case "doBuscarGeneral":
+			request.getRequestDispatcher("BuscadorGeneralAction").forward(request, response);
+			urlVista= "buscarResultados.html";
+			break;
+		
+		case "toBuscarGeneral":urlVista="tobuscarGeneral";break;
+		case "toAlta":urlVista="alta.html";break;
+		case "toBuscar":urlVista="buscar.jsp";break;
+		case "toEliminar":urlVista="eliminar.html";break;
+		default:urlVista="inicio.html";
 		};
 		
 		//Transferimoa el control a la vista definitiva
