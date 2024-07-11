@@ -8657,3 +8657,132 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jpt.jpa.core 4 0 2024-07-11 08:46:26.470
 !MESSAGE Duplicate resource definitions listed for resource type 'JPA persistence.xml file 3.0': [GenericPersistenceXmlDefinition3_0, GenericPersistenceXmlDefinition3_1]
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2024-07-11 08:46:45.780
+!MESSAGE A workspace crash was detected. The previous session did not exit normally. Not using saved taglib indexes.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:46:57.674
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:07.338
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:07.358
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:15.015
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:15.066
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:15.081
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:15.630
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:15.696
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:15.706
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:17.013
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:17.052
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:17.063
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:21.695
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:21.703
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:25.528
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:25.560
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:27.878
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:27.891
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:32.912
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:35.132
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:35.142
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:38.820
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:39.017
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:39.035
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:40.132
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:42.064
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:42.085
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:44.207
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:44.554
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:44.562
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:45.980
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:46.097
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:46.108
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:47.836
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:48.419
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:48.429
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:51.125
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:51.537
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:51.543
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:52.377
+!MESSAGE The POM for jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:jar:3.0.0-RC1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:54.836
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-11 08:47:54.846
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
