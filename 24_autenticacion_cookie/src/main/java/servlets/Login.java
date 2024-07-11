@@ -34,11 +34,11 @@ public class Login extends HttpServlet {
 	}
 	dispatcher.forward(request, response);
 }
-	private void crearCookie(HttpServletResponse response) {
-	Cookie cookie = new Cookie("usuario",usuario);
-
-		Cookie ck=new Cookie( user);
+	private void crearCookie(HttpServletResponse response,String usuario) {
+		Cookie cookie=new Cookie("usuario",usuario );
+		cookie.setMaxAge(10_000_000);
+		response.addCookie(cookie);
 		
-		response.addCookie(ck);
+	}		
 
 }

@@ -7,13 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<center>
-		<h2>el usuario <%=request.getParameter("username") %></h2>
-		<h2>con contraseña <%=request.getParameter("password") %></h2>
-		<h2>no es valido</h2>
-		<a href='loging.html'>Volver</a>
-	
-	</center>
+	<h3>El usuario ${param.usuario} con contraseña 
+	${param.password}, no existe</h3>
+	<br><br>
+	<a href="login.html">Volver</a>
 
 </body>
 </html>

@@ -9,10 +9,11 @@
 <body>
 	<%----recuperamos el atributo de peticion ficha, y mostramos sus datos --%>
 
-	<%Ficha ficha=(Ficha)request.getAttribute("ficha"); %>
-		<h2>Usuario: <%=ficha.getUsuario() %></h2>
-		<h2>Email: <%=ficha.getEmail() %></h2>
-		<h2>Edad: <%=ficha.getEdad() %></h2>
+	
+		<h2>Usuario: ${sessionScope.ficha.usuario}</h2>
+		<h2>Email: ${sessionScope.ficha.email}</h2>
+		<h2>Edad: ${sessionScope.ficha.edad}</h2>
+		
 	
 	<a href="login.html"></a>
 </body>
