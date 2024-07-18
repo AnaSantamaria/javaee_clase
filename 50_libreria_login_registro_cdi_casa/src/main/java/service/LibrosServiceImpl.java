@@ -3,9 +3,7 @@ package service;
 import java.util.List;
 
 import dao.LibrosDao;
-import dao.LibrosDaoImpl;
 import dao.TemasDao;
-import dao.TemasDaoImpl;
 import dtos.LibroDto;
 import dtos.TemaDto;
 import jakarta.inject.Inject;
@@ -21,10 +19,11 @@ public class LibrosServiceImpl implements LibrosService {
 	TemasDao temasDao;
 	@Inject
 	Mapeador mapeador;
+	
 	@Override
 	public List<TemaDto> getTemas(){
 		return temasDao.findAll().stream()
-				.map(t->Mapeador.temaEntityToDto(t))//Stream<TemaDto>
+				.map(t->mapeador.temaEntityToDto(t))//Stream<TemaDto>
 				.toList();
 	}
 	
@@ -33,18 +32,33 @@ public class LibrosServiceImpl implements LibrosService {
 		
 		if(idTema!=0) {
 			return librosDao.findByIdTema(idTema).stream()
-					.map(l->Mapeador.libroEntityToDto(l))
+					.map(l->mapeador.libroEntityToDto(l))
 					.toList();
 		}else{
 			return librosDao.findAll().stream()
-					.map(l->Mapeador.libroEntityToDto(l))
+					.map(l->mapeador.libroEntityToDto(l))
 					.toList();
 		}
 			
 	}
 	@Override
 	public LibroDto getLibro(int isbn) {
-		return Mapeador.libroEntityToDto(librosDao.findByIsbn(isbn));
+		return mapeador.libroEntityToDto(librosDao.findByIsbn(isbn));
+	}
+	
+	@Override
+	public TemaDto getTema(int idTema) {
+		return mapeador.temaEntityToDto(temasDao.findById(idTema));
+	}
+	
+	@Override
+	public boolean guardarLibro(LibroDto libro) {
+		if(librosDao.findByIsbn(libro.getIsbn())!=null) {
+			return false;
+		}
+		librosDao.save(mapeador.libroDtoToEntity(libro));
+		return true;
+	}
 	}
 	
 	@Override
